@@ -1,0 +1,23 @@
+iniciar o npm:
+	npm init -y
+
+***
+o -y faz deixa as respostas no padrão
+***
+
+instalar o node-sass:
+	npm install node-sass
+
+no arquivo package.json, incluir nos "scripts":
+	"sass": "node-sass -w scss/ -o dist/css/ --recursive"
+
+***
+na pasta "scss" é onde todos os arquivos .scss irão
+na pasta "dist" é onde todo o css compilado irá
+***
+
+após isso, executar no terminal na pasta principal do projeto:
+	npm run sass
+
+Site do Koala Sass Compiler:
+	koala-app.com
