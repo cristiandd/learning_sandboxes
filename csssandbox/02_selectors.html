@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Selectors</title>
+	<style>
+
+		/* Element Styling */
+		body {
+			background-color: #333;
+		}
+
+		h2#green {
+			color: green;
+		}
+		/* Ou
+		#green {
+			color: green;
+		}
+		*/
+
+		.orange { /* Todos os elementos com a classe orange */
+			color: orange;
+		}
+
+		
+
+		/* Multiple Selectors */
+		#welcome, #about {
+			border: 1px solid black;
+		}
+
+		/* Nested Selectors */
+		#welcome p { /* Paragraphs inside #welcome only */
+
+		}
+	</style>
+</head>
+<body>
+	<div id="welcome">
+		<h2 id="green">Welcome</h2>
+		<p class="orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aut, placeat dolore quis. Unde hic officiis eveniet praesentium. A, architecto.</p>
+	</div>
+	<div id="about">
+		<h2>About</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias libero alias perspiciatis velit similique reiciendis hic nesciunt voluptates repellendus cumque.</p>
+	</div>
+</body>
+</html>

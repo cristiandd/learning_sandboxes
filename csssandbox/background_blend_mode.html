@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Background Blend Mode</title>
+	<style>
+		/*
+			https://css-tricks.com/almanac/properties/b/background-blend-mode/
+			
+			Valores:
+
+			initial: valor padrão sem blend;
+
+			inherit: recebe o blend do elemento pai;
+
+			normal: a cor não irá se misturar com a imagem;
+
+			multiply: a cor e a imagem irão se misturar e geralmente irá deixar a imagem mais escura
+
+			screen: ambas irão ser invertidas, multiplicadas e invertidas de novo
+
+			overlay: a cor de fundo é misturada com o a imagem para refletir o brilho ou escuridão do pano de fundo
+
+			darken: se a imagem de fundo é mais escura do que a cor, então a imagem é substituída
+
+			lighten: se a imagem de fundo é mais clara do que a cor, então a imagem é substituída.
+
+			color-dodge: a cor de fundo é dividida pelo inverso da imagem. É bem similar ao screen blend mode.
+
+			color-burn: a cor de fundo é invertida, dividida pela imagem e invertida de novo. Similar ao multiply
+
+			hard-light: se a imagem de fundo é mais clara que a cor de fundo, então o resultado é 'multiply', senão é 'screen'
+
+			soft-light: o resultado final é similar ao 'hard-light', mas é mais suave
+
+			difference: o resultado é tido por subtrair a cor mais escura da imagem e a da cor pela mais clara. A imagem vai ficar com um alto contraste
+
+			exclusion: resultado semelhante ao 'difference', mas com um contraste menor
+
+			hue: o resultado é a matiz da imagem de fundo combinada com a luminosidade e saturação da cor de fundo
+
+			saturation: mantém a saturação da imagem de fundo enquanto mistura a matiz e luminosidade da cor de fundo
+
+			color: mantém a matiz e saturação da imagem de fundo e a luminosidade da cor de fundo.
+
+			luminosity: luminosidade da cor superior é preservada enquanto usa a saturação e matiz da cor de fundo
+
+			Obs.: para se usar vários blend-modes, é preciso usar o linear-gradient
+		*/
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		div {
+			background-image: url('https://source.unsplash.com/random');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;
+			background-color: darkred;
+			background-blend-mode: multiply;
+			height: 100vh;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		
+	</div>
+</body>
+</html>

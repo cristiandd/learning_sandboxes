@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Fonts</title>
+	<style>
+		/* Web Safe Fonts - alguns exemplos de combinações
+
+			__Serif Fonts__
+
+			"Times New Roman", times, serif
+			Georgia, serif
+			"Paladino Linotype", "Book Antiqua", Palatino, serif
+			
+			__Sans-serif Fonts__
+
+			Arial, Helvetica, sans-serif
+			"Arial Black", Gadget, sans-serif
+			"Comic Sans MS", cursive, sans-serif
+			Impact, Charcoal, sans-serif
+			"Lucida Sans Unicode", "Lucida Grande", sans-serif
+			Tahoma, Geneva, sans-serif
+			"Trebuchet MS", Helvetica, sans-serif
+			Verdana, Geneva, sans-serif
+
+			__Monospace Fonts__
+
+			"Courier New", Courier, monospace
+			"Lucida Console", Monaco, monospace
+		 */
+		body {
+			/* It will search for the first font. If it can't, it will search for the second. If any of those fonts is available, it will display any sans-serif font --> font-family: Arial, Helvetica, sans-serif;*/
+			font-family: Roboto, sans-serif;
+			font-size: 18px; /* The html tag has for standard font-size the value of 16px*/
+			line-height: 1.6em; /* Adjust the space between lines */
+		}
+
+		#welcome p span {
+			font-weight: bold;
+		}
+
+		#about p span {
+			font-weight: 900;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<div id="welcome"><p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Nam itaque at voluptates, ullam quisquam? Minima at quas, ut, ipsum cum optio veniam laudantium voluptatum quibusdam sint quasi asperiores animi dicta.</p></div>
+
+	<div id="about"><p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Nam itaque at voluptates, ullam quisquam? Minima at quas, ut, ipsum cum optio veniam laudantium voluptatum quibusdam sint quasi asperiores animi dicta.</p></div>
+</body>
+</html>
